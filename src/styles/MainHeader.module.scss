@@ -4,8 +4,7 @@
 .main__header {
   color: $white;
   //   padding: 2rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url(../assets//images/homepageImage.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../assets//images/homepageImage.png);
   @include sectionPadding();
   // width: 100vw;
   height: 100vh;
@@ -21,13 +20,24 @@
 
     h1 {
       font-size: 3rem;
+      // border: 1px solid #fff;
+      width: fit-content;
+      // font-style: ;
     }
+  }
+
+  &_CTA {
+    display: flex;
+    gap: 0.5rem;
     button {
       @include medium-button();
-    }
-    &_CTA {
-      display: flex;
-      gap: 2rem;
+
+      &:nth-child(2) {
+        background-color: transparent;
+        &:hover {
+          font-weight: $fontWeight-600;
+        }
+      }
     }
   }
 }

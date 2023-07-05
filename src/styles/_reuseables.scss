@@ -138,7 +138,7 @@
 }
 @mixin medium-button {
   width: fit-content;
-  border-radius: 50px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: $font-size-16 - 0.126rem;
   padding: 0.8rem 1.1rem;
