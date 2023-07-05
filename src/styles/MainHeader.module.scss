@@ -4,11 +4,14 @@
 .main__header {
   color: $white;
   //   padding: 2rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../assets//images/homepageImage.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../assets//images/homepageImage.png);
   @include sectionPadding();
   // width: 100vw;
-  height: 100vh;
-  min-height: 100vh;
+  height: 85vh;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
   background-position: center;
   background-attachment: fixed;
 
@@ -38,6 +41,36 @@
           font-weight: $fontWeight-600;
         }
       }
+    }
+  }
+
+  .main__heaader__goods {
+    position: absolute;
+    display: flex;
+    bottom: 2rem;
+    width: 70%;
+    background-color: $white;
+    align-items: center;
+    gap: 3rem;
+    color: black;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    .goods__contaiiner {
+      display: flex;
+      padding: 1rem 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .buttomLine {
+      position: absolute;
+      width: 100%;
+      height: 0.275rem;
+      background: $primary-color;
+      bottom: 0;
+      left: 0;
+      border-radius: 3px;
     }
   }
 }
