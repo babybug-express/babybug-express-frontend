@@ -1,19 +1,20 @@
 import { FunctionComponent, ReactElement, ReactNode } from "react";
-import Navbar from "./Navbar";
 import Footer from "./Footer";
+import MainHeader from "./MainHeader";
 
 interface LayoutProps {
-    children?: ReactNode
+  children?: ReactNode;
+  MainHeader: React.FunctionComponent;
 }
 
 const Layout: FunctionComponent<LayoutProps> = ({ children }): ReactElement => {
-    return (
-        <div>
-            <Navbar />
-            {children}
-            <Footer />
-        </div>
-    );
-}
+  return (
+    <div>
+      <MainHeader />
+      {children}
+      <Footer />
+    </div>
+  );
+};
 
 export default Layout;

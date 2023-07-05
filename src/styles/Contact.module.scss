@@ -1,0 +1,14 @@
+@import "./reuseables";
+@import "./variables.scss";
+
+.contact {
+  background-color: $black;
+  color: $white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../assets//images/deliveryBus.png);
+  height: 50vh;
+  @include sectionPadding();
+  min-height: 50vh;
+  background-position: center;
+  background-attachment: cover;
+}

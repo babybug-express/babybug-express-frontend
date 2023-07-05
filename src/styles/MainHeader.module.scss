@@ -1,0 +1,33 @@
+@import "./reuseables";
+@import "./variables.scss";
+
+.main__header {
+  color: $white;
+  //   padding: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../assets//images/homepageImage.png);
+  @include sectionPadding();
+  // width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+
+  &_buttom {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h1 {
+      font-size: 3rem;
+    }
+    button {
+      @include medium-button();
+    }
+    &_CTA {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+}
