@@ -9,20 +9,21 @@
 
   &__top {
     display: flex;
-    position: relative;
     gap: 3rem;
-  }
-  .starImage {
-    position: absolute;
-    border-radius: 50%;
-    top: 40%;
-    left: 47%;
-    height: 80px;
-    width: 80px;
   }
 
   &__left {
     width: 100%;
+    position: relative;
+    
+    .starImage {
+      position: absolute;
+      border-radius: 50%;
+      top: 40%;
+      right: -4%;
+      height: 80px;
+      width: 80px;
+    }
   }
 
   &__right {

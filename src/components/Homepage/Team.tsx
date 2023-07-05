@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from "react";
-import styles from "../styles/Team.module.scss";
+import styles from "../../styles/Team.module.scss";
 import Image from "next/image";
-import team1 from "../assets/images/team1.png";
-import team2 from "../assets/images/team2.png";
+import team1 from "../../assets/images/team1.png";
+import team2 from "../../assets/images/team2.png";
 interface TeamProps {}
 
 const Team: FunctionComponent<TeamProps> = () => {
