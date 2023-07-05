@@ -13,15 +13,15 @@ const Team: FunctionComponent<TeamProps> = () => {
       <div className={styles.team__people}>
         <div className={styles.team__person}>
           <Image src={team1} alt="" className={styles.team__image} />
-          <p>Dustin</p>
+          <p>Dustin Hnilica</p>
         </div>
         <div className={styles.team__person}>
           <Image src={team2} alt="" className={styles.team__image} />
-          <p>Ayeni John</p>
+          <p>Ayeni Victor</p>
         </div>
         <div className={styles.team__person}>
           <Image src={team3} alt="" className={styles.team__image} />
-          <p>Jennifer</p>
+          <p>Jennifer BugBee</p>
         </div>
       </div>
     </div>
