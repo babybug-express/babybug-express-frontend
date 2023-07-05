@@ -1,0 +1,61 @@
+@import "./reuseables";
+@import "./variables.scss";
+
+.aboutUs {
+  @include sectionPadding();
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  &__top {
+    display: flex;
+    position: relative;
+    gap: 3rem;
+  }
+  .starImage {
+    position: absolute;
+    border-radius: 50%;
+    top: 40%;
+    left: 47%;
+    height: 80px;
+    width: 80px;
+  }
+
+  &__left {
+    width: 100%;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+
+    .section__title {
+      color: $primary-color;
+    }
+
+    h3 {
+      color: $secondary-color;
+      font-size: $font-size-24;
+      font-weight: $fontWeight-700;
+
+      p {
+        color: blue;
+        line-height: 30.84px;
+      }
+    }
+  }
+
+  &__buttom {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+
+    p {
+      font-size: 1rem;
+      color: $white;
+    }
+  }
+}

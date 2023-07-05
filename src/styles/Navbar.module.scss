@@ -1,6 +1,30 @@
-@import './reuseables';
-@import './variables.scss';
+@import "./reuseables";
+@import "./variables.scss";
 
 .navbar {
-    background-color: $black; 
+  color: $white;
+  // @include sectionPadding();
+  // width: 100vw ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+
+  // &__right {
+  // }
+
+  &__left {
+    display: flex;
+    gap: 3rem;
+
+    li {
+      cursor: pointer;
+      transition: $transition;
+
+      &:hover {
+        transition: $transition;
+        color: $primary-color;
+      }
+    }
+  }
 }
