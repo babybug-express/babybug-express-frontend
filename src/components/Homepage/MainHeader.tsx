@@ -7,7 +7,7 @@ const MainHeader: FunctionComponent<MainHeaderProps> = () => {
   return (
     <div className={styles.main__header}>
       <div className={styles.main__header_buttom}>
-        <p>BABYBUG</p>
+        <p>BABYBUG EXPRESS</p>
         <h1>
           TRANSPORT IS WHAT <br />
           WE DO BEST
