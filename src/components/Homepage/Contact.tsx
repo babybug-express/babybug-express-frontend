@@ -11,7 +11,7 @@ interface ContactProps {
 const Contact: FunctionComponent<ContactProps> = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: any) => {
     e.preventDefault();
 
     emailjs
