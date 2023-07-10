@@ -12,16 +12,19 @@ const Team: FunctionComponent<TeamProps> = () => {
       <h3>OUR TEAM</h3>
       <div className={styles.team__people}>
         <div className={styles.team__person}>
+          <Image src={team3} alt="" className={styles.team__image} />
+          <p>Jennifer BugBee</p>
+          <strong>C.E.O</strong>
+        </div>
+        <div className={styles.team__person}>
           <Image src={team1} alt="" className={styles.team__image} />
           <p>Dustin Hnilica</p>
+          <strong>C.O.O</strong>
         </div>
         <div className={styles.team__person}>
           <Image src={team2} alt="" className={styles.team__image} />
           <p>Ayeni Victor</p>
-        </div>
-        <div className={styles.team__person}>
-          <Image src={team3} alt="" className={styles.team__image} />
-          <p>Jennifer BugBee</p>
+          <strong>D.O</strong>
         </div>
       </div>
     </div>
