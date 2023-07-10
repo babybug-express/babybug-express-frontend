@@ -14,19 +14,19 @@ const Team: FunctionComponent<TeamProps> = () => {
         <div className={styles.team__person}>
           <Image src={team3} alt="" className={styles.team__image} />
           <p>Jennifer BugBee</p>
-          <strong>C.E.O</strong>
+          <strong>CHIEF EXECUTIVE OFFICER (C.E.O)</strong>
           <h4>(989) 488 0842</h4>
         </div>
         <div className={styles.team__person}>
           <Image src={team1} alt="" className={styles.team__image} />
           <p>Dustin Hnilica</p>
-          <strong>C.O.O</strong>
+          <strong>CHIEF OPERATIONS OFFICER(C.O.O)</strong>
           <h4>(989) 488 8594</h4>
         </div>
         <div className={styles.team__person}>
           <Image src={team2} alt="" className={styles.team__image} />
           <p>Ayeni Victor</p>
-          <strong>D.O</strong>
+          <strong>DIRECTOR OF OPERATION (D.O)</strong>
           <h4>(706) 452 1324</h4>
         </div>
       </div>
