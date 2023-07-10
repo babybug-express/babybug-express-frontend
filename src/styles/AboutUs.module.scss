@@ -11,6 +11,17 @@
   flex-direction: column;
   margin-top: 5rem;
   gap: 3rem;
+  position: relative;
+
+  .float__nav__container {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+
+    .float__navDiv {
+      // position: fixed;
+    }
+  }
 
   &__top {
     display: flex;
@@ -20,7 +31,6 @@
   &__left {
     width: 100%;
     position: relative;
-
     .starImage {
       position: absolute;
       border-radius: 50%;
@@ -115,6 +125,7 @@
       display: flex;
       padding: 0.75rem 1.625rem;
       gap: 0.5rem;
+      text-align: center;
       width: fit-content;
       border-radius: 0rem 0rem 1.25rem 1.25rem;
       background: $primary-color;
