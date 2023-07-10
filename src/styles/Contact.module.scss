@@ -11,4 +11,57 @@
   min-height: 50vh;
   background-position: center;
   background-attachment: fixed;
+  position: relative;
+
+  .form__container {
+    // padding: 3rem;
+    position: absolute;
+    width: 38.4375rem;
+    height: 20rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 3rem;
+    right: 8rem;
+    bottom: 1rem;
+    gap: 0.5rem;
+
+    p {
+      color: $primary-color;
+    }
+    h3 {
+      color: $secondary-color;
+      font-size: 1.5rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .inputStyle {
+        display: flex;
+        gap: 1rem;
+
+        input {
+          width: 16.5rem;
+          padding: 1rem 0.5rem;
+          align-items: center;
+          gap: 0.5rem;
+          border: 1px solid rgba(172, 172, 172, 0.5);
+        }
+      }
+      textarea {
+        width: 33;
+        height: 7.5rem;
+        padding: 1rem 0.5rem;
+        align-items: flex-start;
+        gap: 0.5rem;
+        border: 1px solid rgba(172, 172, 172, 0.5);
+      }
+      button {
+        @include medium-button();
+      }
+    }
+  }
 }

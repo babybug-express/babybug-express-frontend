@@ -11,7 +11,7 @@ const Layout: FunctionComponent<LayoutProps> = ({ children }): ReactElement => {
     <>
       <Navbar />
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
