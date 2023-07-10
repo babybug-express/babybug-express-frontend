@@ -132,6 +132,15 @@
       color: $white;
     }
 
+    strong {
+      margin-top: 0.2rem;
+    }
+
+    h4 {
+      margin-top: 0.3rem;
+      color: $secondary-color;
+    }
+
     .team__image {
       height: auto;
       width: 15rem;
