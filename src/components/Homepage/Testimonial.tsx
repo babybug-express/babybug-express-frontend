@@ -1,10 +1,18 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useEffect } from "react";
 import styles from "../../styles/AboutUs.module.scss";
 import TestimonialImage from "../../assets/images/testimonial.png";
 import Image from "next/image";
 interface TestimonialProps {}
 
 const Testimonial: FunctionComponent<TestimonialProps> = () => {
+  const [seed, setSeed] = React.useState<number | string>("");
+  const seedFunc = () => {
+    let randomNumber = Math.floor(Math.random() * 5000);
+    // console.log(randomNumber);
+    return randomNumber;
+  };
+  console.log(seedFunc);
+
   return (
     <div className={styles.testimonials__container}>
       <p className={styles.section__title}>TESTIMONIALS</p>
@@ -18,78 +26,93 @@ const Testimonial: FunctionComponent<TestimonialProps> = () => {
           <span>Caroline Jones</span>
           <div className={styles.testimonial__image__container}>
             <Image
-              src={TestimonialImage}
+              src={`https://avatars.dicebear.com/api/human/%20%20${seedFunc()}.svg`}
               alt="testimonialImage"
+              width={45}
+              height={45}
               className="testimonial__image"
             />
           </div>
         </div>
         <div className={styles.testimonial}>
           <p>
-            “Babybug is great! From moving household goods to providing accurate
-            quotes, we aim to make your experience hassle-free and efficient.”
+            “Highly recommends BabyBug Express LLC for a smooth and efficient
+            move, praising their careful handling of household goods.”
           </p>
-          <span>Caroline Jones</span>
+          <span>Sarah Johnson:</span>
           <div className={styles.testimonial__image__container}>
             <Image
-              src={TestimonialImage}
+              src={`https://avatars.dicebear.com/api/human/%20%20${seedFunc()}.svg`}
               alt="testimonialImage"
+              width={45}
+              height={45}
               className="testimonial__image"
             />
           </div>
         </div>
         <div className={styles.testimonial}>
           <p>
-            “Babybug is great! From moving household goods to providing accurate
-            quotes, we aim to make your experience hassle-free and efficient.”
+            “Expresses gratitude for BabyBug Express LLC's exceptional service,
+            including accurate quotes and helpful driver assistance at loading
+            and offloading dock.”
           </p>
-          <span>Caroline Jones</span>
+          <span>Michael Thompson </span>
           <div className={styles.testimonial__image__container}>
             <Image
-              src={TestimonialImage}
+              src={`https://avatars.dicebear.com/api/human/%20%20${seedFunc()}.svg`}
               alt="testimonialImage"
+              width={45}
+              height={45}
               className="testimonial__image"
             />
           </div>
         </div>
         <div className={styles.testimonial}>
           <p>
-            “Babybug is great! From moving household goods to providing accurate
-            quotes, we aim to make your experience hassle-free and efficient.”
+            "Appreciates BabyBug Express LLC for making her move stress-free,
+            highlighting their attention to detail and friendly staff.”
           </p>
-          <span>Caroline Jones</span>
+          <span>Emily Davis</span>
           <div className={styles.testimonial__image__container}>
             <Image
-              src={TestimonialImage}
+              src={`https://avatars.dicebear.com/api/human/%20%20${seedFunc()}.svg`}
               alt="testimonialImage"
+              width={45}
+              height={45}
               className="testimonial__image"
             />
           </div>
         </div>
         <div className={styles.testimonial}>
           <p>
-            “Babybug is great! From moving household goods to providing accurate
-            quotes, we aim to make your experience hassle-free and efficient.”
+            “Highly recommends BabyBug Express LLC for their reliable moving
+            services and praises their prompt and careful handling of
+            belongings”
           </p>
-          <span>Caroline Jones</span>
+          <span>David Anderson</span>
           <div className={styles.testimonial__image__container}>
             <Image
-              src={TestimonialImage}
+              src={`https://avatars.dicebear.com/api/human/%20%20${seedFunc()}.svg`}
               alt="testimonialImage"
+              width={45}
+              height={45}
               className="testimonial__image"
             />
           </div>
         </div>
         <div className={styles.testimonial}>
           <p>
-            “Babybug is great! From moving household goods to providing accurate
-            quotes, we aim to make your experience hassle-free and efficient.”
+            “Highly satisfied with BabyBug Express LLC's reliable and efficient
+            handling of household goods, praising their friendly and
+            professional team. ”
           </p>
-          <span>Caroline Jones</span>
+          <span>Jessica Lewis</span>
           <div className={styles.testimonial__image__container}>
             <Image
-              src={TestimonialImage}
+              src={`https://avatars.dicebear.com/api/human/%20%20${seedFunc()}.svg`}
               alt="testimonialImage"
+              width={45}
+              height={45}
               className="testimonial__image"
             />
           </div>
